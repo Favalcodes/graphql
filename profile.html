@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font awesome 5 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!-- Font awesome 4 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="css/profile.css" />
+    <!-- main js -->
+    <script src="js/app.js" defer></script>
+    <title>Favalcodes project</title>
+  </head>
+  <body>
+    <nav class="desktop-nav">
+      <div class="left">
+        <div class="logo">
+          <img src="images/github.png" alt="github logo" class="logo-image" />
+        </div>
+        <input
+          type="text"
+          class="nav-search"
+          placeholder="search or jump into..."
+        />
+        <ul class="nav-list">
+          <li class="nav-item">Pull requests</li>
+          <li class="nav-item">Issues</li>
+          <li class="nav-item">Codespaces</li>
+          <li class="nav-item">Marketplaces</li>
+          <li class="nav-item">Explore</li>
+        </ul>
+      </div>
+      <div class="icons">
+        <i class="fa fa-bell-o"
+          ><span class="dot"><i class="fa fa-circle"></i></span
+        ></i>
+        <i class="fa fa-plus"> <i class="fa fa-caret-down"></i></i>
+        <div class="p-pic">
+          <img src="images/avatar.jpeg" alt="" class="picture"
+          id="pic" />&nbsp;
+          <i class="fa fa-caret-down"></i>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile navigation -->
+    <div class="mobile-nav">
+      <div class="mobile-first">
+        <button class="nav-toggle">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="logo">
+          <img src="images/github.png" alt="github logo" class="logo-image" />
+        </div>
+        <i class="fa fa-bell-o"
+          ><span class="dot"><i class="fa fa-circle"></i></span
+        ></i>
+      </div>
+      <nav class="list">
+        <input
+          type="text"
+          class="nav-search"
+          placeholder="search or jump into..."
+        />
+        <ul class="mobile-nav-list">
+          <li class="nav-item">Pull requests</li>
+          <li class="nav-item">Issues</li>
+          <li class="nav-item">Codespaces</li>
+          <li class="nav-item">Marketplaces</li>
+          <li class="nav-item">Explore</li>
+        </ul>
+        <div class="icons">
+          <div class="p-pic">
+            <img
+              src="images/avatar.jpeg"
+              alt=""
+              class="picture"
+              id="pic"
+            />&nbsp;
+            <p class="p-name" id="p-name">Username</p>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <main>
+      <div class="container">
+        <div class="profile">
+          <div class="mobile-flex">
+            <div class="dp">
+              <img
+                src="images/avatar.jpeg"
+                alt=""
+                class="ppix"
+                id="profile-pic"
+              />
+              <span class="smile"><i class="fa fa-smile-o"></i></span>
+            </div>
+            <div class="profile-info">
+              <div class="profile-name">
+                <h1 id="name">Profile Name</h1>
+                <span class="username" id="username">Username</span>
+              </div>
+            </div>
+          </div>
+          <div class="info">
+            <p id="bio">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis qui
+              odio
+            </p>
+          </div>
+        </div>
+        <div class="repos">
+          <ul class="tabs nav-list">
+            <li class="nav-item"><i class="fas fa-book-open"></i> Overview</li>
+            <li class="nav-item active">
+              <i class="fa fa-book"></i>Repositories
+              <span class="number">20</span>
+            </li>
+            <li class="nav-item"><i class="fas fa-poll"></i>Projects</li>
+            <li class="nav-item"><i class="fa fa-cube"></i>Packages</li>
+          </ul>
+          <hr class="over-hr" />
+          <input
+            type="text"
+            placeholder="Find a repository..."
+            class="form-input"
+          />
+          <hr />
+          <p class="first-p">
+            <strong>20</strong> results for <strong>public</strong> repositories
+          </p>
+          <hr class="hr" />
+          <div class="parent-rep" id="parent-rep">
+            <!-- <div class="rep" id="rep">
+              <div class="rep-left">
+                <h3 class="rep-name" id="repo-name">
+                  <strong>Repo name</strong>
+                </h3>
+                <p class="tagline" id="desc">This is a little tagline</p>
+                <div class="repo-info">
+                  <div class="lang">
+                    <div class="color" id="color"></div>
+                    <p id="lang">Html</p>
+                  </div>
+                  <div class="star">
+                    <i class="fa fa-star-o"></i>
+                    <p id="star">3</p>
+                  </div>
+                  <div class="fork">
+                    <i class="fas fa-code-branch"></i>
+                    <p id="fork">4</p>
+                  </div>
+                  <p>updated on <span id="update">oct 1</span></p>
+                </div>
+              </div>
+              <div class="rep-right">
+                <button class="btn"><i class="fa fa-star-o"></i> Star</button>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
+
+<script>
+  //Navbar
+
+  let navBar = () => {
+    const navs = document.querySelectorAll(".list");
+
+    navs.forEach((nav) => nav.classList.toggle("list-toggle"));
+  };
+  document.querySelector(".nav-toggle").addEventListener("click", navBar);
+</script>

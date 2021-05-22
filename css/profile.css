@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+.desktop-nav{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #24292e;
+    color: #fff;
+    padding: 20px;
+}
+.left{
+    display: flex;
+}
+.mobile-nav{
+    display: none;
+}
+.nav-toggle{
+    display: none;
+}
+.logo{
+    width: 35px;
+    height: 30px;
+    margin: 0px 20px;
+}
+.logo-image{
+    width: 100%;
+    height: 100%;
+}
+.nav-search{
+    background: transparent;
+    border: 1px solid #969494;
+    border-radius: 5px;
+    padding: 0 10px;
+    width: 300px;
+    height: 30px;
+    color: #fff;
+}
+.nav-list{
+    display: flex;
+    width: 60%;
+    padding-top: 5px;
+    margin-left: 20px;
+    font-weight: 700;
+}
+.nav-item{
+    list-style: none;
+    margin: 0 5px;
+}
+.icons{
+    display: flex;
+    justify-content: space-evenly;
+    width: 8%;
+    padding-top: 10px;
+}
+.p-pic{
+    width: 20px;
+    height: 20px;
+    display: flex;
+}
+.picture{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: relative;
+    bottom: 5px;
+}
+.dot{
+    position: relative;
+    font-size: 10px;
+    color: #3391ee;
+    right: 40%;
+    bottom: 7px;
+}
+.tabs{
+    width: 100%;
+    color: #24292e;
+    margin-top: 40px;
+    font-weight: 400;
+}
+.tabs .fa, .tabs .fas{
+    color: #969494;
+    padding-right: 5px;
+}
+.number{
+    background: #dad8d8;
+    padding: 1px 6px;
+    border-radius: 10px;
+}
+.tabs .nav-item{
+    padding: 0 10px;
+    font-weight: 300;
+}
+.nav-item.active, .nav-item.active .fa{
+    font-weight: 500;
+    color: #1d1d1d;
+}
+.nav-item.active{
+    padding-bottom: 15px;
+    border-bottom: 2px solid #e68516;
+}
+hr{
+    border: 1px solid #f1f3f5;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+.over-hr{
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+.profile{
+    width: 35%;
+    padding: 0 10px;
+    padding-left: 25px;
+    z-index: 999;
+}
+.dp{
+    width: 65%;
+    height: 65%;
+    position: relative;
+    margin-top: 10%;
+}
+.ppix{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px solid #000;
+    margin-left: 43%;
+}
+.smile{
+    background: #fff;
+    border-radius: 50%;
+    border: 1px solid #f1f3f5;
+    padding: 8px 11px;
+    position: relative;
+    bottom: 70px;
+    left: 130%;
+    font-size: 20px;
+}
+.profile-info{
+    position: relative;
+    top: 20%;
+    margin-left: 20%;
+    line-height: 20px;
+}
+.profile-name{
+    line-height: 40px;
+    margin-bottom: 15px;
+}
+.repos{
+    width: 75%;
+    padding-right: 25px;
+}
+.form-input{
+    width: 98%;
+    margin: 15px 0;
+    border: 1px solid #f1f3f5;
+    padding: 10px;
+    border-radius: 5px;
+}
+.first-p{
+    margin: 15px 0;
+}
+.hr{
+    width: 240px;
+}
+.rep{
+    margin: 20px 0;
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+.rep-name{
+    color: #026dd8;
+    padding: 15px 0;
+    padding-bottom: 10px;
+}
+.tagline{
+    padding-bottom: 12px;
+}
+.repo-info{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    font-size: 14px;
+}
+.lang{
+    display: flex;
+}
+.star{
+    display: flex;
+}
+.fa-star-o{
+    margin-right: 5px;
+}
+.fa-code-branch{
+    margin-right: 5px;
+}
+.fork{
+    display: flex;
+}
+.color{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.rep-right{
+    margin: 20px 0;
+}
+.btn{
+    padding: 6px 15px;
+    background: #faf8f8;
+    border-radius: 5px;
+    border: 1px solid #c4c4c4;
+    text-align: center;
+}
+.username{
+    font-size: 18px;
+    color: #6d6c6c;
+    font-weight: 400;
+    padding-top: 15px;
+}
+.info{
+    position: relative;
+    top: 0;
+    padding-left: 20%;
+}
+.info p{
+    line-height: 25px;
+}
+
+@media (min-width: 940px) and (max-width: 1200px) {
+    nav{
+        width: 100%;
+    }
+    .dp{
+        width: 50%;
+        height: 40%;
+        position: relative;
+        top: 10%;
+    }
+}
+
+@media (max-width: 939px) {
+    .desktop-nav{
+        display: none;
+    }
+    .nav-toggle{
+        background: transparent;
+        border: none;
+        color: #fff;
+        font-size: 24px;
+        display: block;
+        margin-top: 0;
+    }
+    .mobile-nav{
+        background: #24292e;
+        color: #fff;
+        padding: 20px 10px;
+        width: 100%;
+        display: block;
+        justify-content: space-between;
+        height: auto;
+    }
+    .mobile-first{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .mobile-nav-list{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    .list{
+        display: none;
+        width: 100%;
+        padding: 15px 0;
+        flex-direction: column;
+    }
+    .list-toggle{
+        display: flex;
+    }
+    .icons{
+        display: block;
+        padding-left: 5px;
+    }
+    .mobile-nav-list .nav-item{
+        padding: 10px 0;
+        border-bottom: 1px solid #969494;
+    }
+    .nav-search{
+        width: 100%;
+    }
+    .p-pic{
+        width: 20px;
+        height: 20px;
+        display: flex;
+    }
+    .picture{
+        margin-top: 2px;
+        margin-right: 5px;
+    }
+    .container{
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+    .profile{
+        width: 100%;
+        padding: 0 10px;
+        padding-left: 0px;
+        z-index: 999;
+    }
+    .mobile-flex{
+        display: flex;
+    }
+    .dp{
+        width: 20%;
+        height: 20%;
+        margin-top: 0;
+    }
+    .ppix{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 1px solid #000;
+        margin-left: 0;
+    }
+    .smile{
+        background: #fff;
+        border-radius: 50%;
+        border: 1px solid #f1f3f5;
+        padding: 8px 11px;
+        position: relative;
+        bottom: 50px;
+        left: 85%;
+        font-size: 20px;
+    }
+    .profile-info{
+        position: relative;
+        top: 30%;
+        margin-left: 8%;
+        line-height: 20px;
+    }
+    .profile-name{
+        margin-top: 15%;
+    }
+    .info{
+        position: relative;
+        top: 0;
+        padding-left: 0%;
+    }
+    .repos{
+        width: 100%;
+        padding-right: 0;
+    }
+    .form-input{
+        width: 100%;
+    }
+    .tabs{
+        width: 100%;
+        overflow-x: scroll;
+    }
+    .tabs .nav-item{
+        display: flex;
+    }
+}

@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background: linear-gradient(to right, #021c1e, #004445 30%, #6fb98f);
+    font-size: 16px;
+}
+nav{
+    height: 70px;
+    width: 100%;
+    background: #e6ebeb;
+    color: #021c1e;
+    padding: 20px;
+}
+.logo-center{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: 5px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 12.2% auto;
+}
+.input{
+    background: #e6ebeb;
+    color: #021c1e;
+    padding: 100px;
+    border-radius: 5px;
+    line-height: 50px;
+    width: 50%;
+    text-align: center;
+}
+.username{
+    height: 25px;
+    width: 80%;
+    padding: 15px;
+}
+.username:active{
+    border: 1px solid #021c1e;
+}
+.btn{
+    background: #021c1e;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: none;
+}
+.footer{
+    background: #e6ebeb;
+    color: #021c1e;
+    padding: 20px 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 480px) {
+    .input{
+        font-size: 14px;
+        padding: 100px 30px;
+        width: 80%;
+    }
+}
