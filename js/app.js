@@ -1,5 +1,3 @@
-
-
 // Graphql Api
 
 const fullName = document.getElementById("name");
@@ -22,7 +20,7 @@ let getUsername = () => {
   const username = (document.getElementById("username")).value;
 
   const github_token = {
-    token: "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",
+    token: "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",
     username: "favalcodes",
   };
   const baseUrl = "https://api.github.com/graphql";
