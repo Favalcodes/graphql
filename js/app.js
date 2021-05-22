@@ -14,13 +14,13 @@ const divColor = document.getElementsByClassName("color");
 let getUsername = () => {
   const username = (document.getElementById("username")).value;
   localStorage.setItem('username', username);
-  window.location.href = "profile.html"
+  window.open("profile.html", '_blank');
 }
 
   const username = (document.getElementById("username")).value;
 
   const github_token = {
-    token: "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",
+    token: "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",
     username: "favalcodes",
   };
   const baseUrl = "https://api.github.com/graphql";
