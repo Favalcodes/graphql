@@ -301,6 +301,12 @@ hr{
         display: block;
         padding-left: 5px;
     }
+    .fa-bell-o{
+        font-size: 24px;
+    }
+    .dot{
+        font-size: 15px;
+    }
     .mobile-nav-list .nav-item{
         padding: 10px 0;
         border-bottom: 1px solid #969494;
