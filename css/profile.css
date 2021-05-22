@@ -331,9 +331,9 @@ hr{
         display: flex;
     }
     .dp{
-        width: 20%;
-        height: 20%;
-        margin-top: 0;
+        width: 50%;
+        height: 50%;
+        margin-top: 30px;
     }
     .ppix{
         width: 100%;
